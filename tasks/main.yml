@@ -1,0 +1,14 @@
+---
+- name: Install whois, bind-utils, traceroute and net-tools
+  package:
+    name: whois,bind-utils,traceroute,net-tools
+- name: Install mosh
+  package:
+    name: mosh
+- name: Install Netcat
+  package:
+    name: nmap-ncat
+- name: Install Network Manager related utilities
+  package:
+    name: NetworkManager-openvpn,NetworkManager-l2tp,NetworkManager-openconnect,NetworkManager-pptp,NetworkManager-vpnc,NetworkManager-wifi,NetworkManager-wwan
+  when: disable_networkmanager is undefined or not disable_networkmanager
