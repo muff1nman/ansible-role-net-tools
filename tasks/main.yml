@@ -10,5 +10,5 @@
     name: nmap-ncat
 - name: Install Network Manager related utilities
   package:
-    name: NetworkManager-openvpn,NetworkManager-l2tp,NetworkManager-openconnect,NetworkManager-pptp,NetworkManager-vpnc,NetworkManager-wifi,NetworkManager-wwan
+    name: NetworkManager-openvpn,NetworkManager-l2tp,NetworkManager-openconnect,NetworkManager-pptp,NetworkManager-wifi,NetworkManager-wwan
   when: disable_networkmanager is undefined or not disable_networkmanager
